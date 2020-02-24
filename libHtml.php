@@ -36,11 +36,4 @@ class Elem
     echo str_repeat($sep,$i).'</'.$args['elem'].'>'."\n";
   }
 }
-
-// Test
-$obj = new Elem('div', array('class'=>'center', 'val'=>'TEXT'));
-$s1 = $obj->add('span', array('class'=>'center'));
-$s1->add('span', array('val'=>'a span'));
-$obj->add('img', array('href'=>'HREF', 'id'=>'ID', 'class'=>'CLASS'));
-$obj->print();
 ?>
